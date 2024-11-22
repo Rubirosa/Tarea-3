@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Style.css">
+    <title>Generador de CV</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-3 mt-1">
+
+                <div class="card">
+                    <div class="card-header bg-primary text-light">
+                        <h5 class="text-center">Generar CV</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3  mt-2">
+                            <label for="All" class="form-label">Nombre, Cargo, Perfil, Correo,
+                                Telefono, Pagina web, Hobby(separado por coma)</label>
+                            <input id="All" class="form-control" type="text" aria-label="default input example">
+                        </div>
+                        <div class="mb-3">
+                            <label for="works" class="form-label"> Empleos(3)(separado por coma)</label>
+                            <input id="works" class="form-control" type="text" aria-label="default input example">
+                        </div>
+                        <div class="mb-3">
+                            <label for="education" class="form-label">Educacion (3)(separado por coma)</label>
+                            <input id="education" class="form-control" type="text" aria-label="default input example">
+                        </div>
+                        <div class="mb-3">
+                            <label for="skill" class="form-label">Skills(6)(separado por coma)</label>
+                            <input id="skill" class="form-control" type="text" aria-label="default input example">
+                        </div>
+                        <div>
+                            <div>
+                                <button onclick="Reset()" class="btn btn-warning float-end me-2">
+                                    <h5>Reset</h5>
+                                </button>
+                                <button onclick="create()" class="btn btn-success me-5 float-end">
+                                    <h5>Generar</h5>
+                                </button>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="Container-CV">
+            <!-- <div class="col-md-10 offset-1 mt-3">
+                <div class="card">
+                    <div class="card-body bg-primary text-light rounded">
+                        <div class="col-md-4 float-start ms-md-auto">
+                            <img src="img/fSAFBSDVZXCCAS.png" class="rounded-circle my-3" alt="Cinque Terre" width="310"
+                                height="310">
+                         div1   <div> 
+                                    <h2>&nbsp;&nbsp;Nombre</h2>
+                                
+                                <hr>
+                            </div>
+
+                        divmd10int1    <div class="col-md-10 float-start bg-info mb-2 rounded">
+                               minidiv1 <div class="mb-2 mt-2">
+                                    <h5>&nbsp;Perfil</h5>
+                                </div>
+                            </div>
+                          div2  <div class="mb-5">
+                                <label for="text">&nbsp;aqui ahora</label>
+                                <hr>
+                            </div>
+
+                        divmd10int2    <div class="col-md-10 float-start bg-info mb-2 rounded">
+                              minidiv2  <div class="mb-2 mt-2">
+                                    <h5>&nbsp;Contactos</h5>
+                                </div>
+                            </div>
+                          div3  <div class="float-start">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item rounded-pill mb-1">
+                                        Correo: asdasfawdas@dasjfasd.cis
+                                    </li>
+                                    <li class="list-group-item rounded-pill mb-1">
+                                        Telefono: 625475824623
+                                    </li>
+                                    <li class="list-group-item rounded-pill mb-2">
+                                        Pagina web: asdasfasdwadfasf
+                                    </li>
+                                </ul>
+                                <hr>
+                            </div>
+                            divis <div>
+                               divmd10int3 <div class="col-md-10 float-start bg-info rounded mb-2">
+                                   minidiv3 <div class="mb-2 mt-2">
+                                        <h5>&nbsp;Hobbies</h5>
+                                    </div>
+                                </div>
+                              div4  <div class="float-start">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item rounded-pill mb-1">
+                                            el primero
+                                        </li>
+                                        <li class="list-group-item rounded-pill mb-1">
+                                            el segundo
+                                        </li>
+                                        <li class="list-group-item rounded-pill mb-2">
+                                            el tercero
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                        ----------------------------------------------------------------------------
+                      divmd8Emp  <div class="col-md-8 my-3 bg-light mt-5 float-end rounded" style="height: 68rem;">
+                          divmd11Emp  <div class="col-md-11 bg-primary rounded-start mb-2 mt-5 float-end">
+                              minidiv4Emp  <div class="mb-3 mt-2">
+                                    <h4>&nbsp;Empleos</h4>
+                                </div>
+                            </div>
+
+                          divmd11Emps  <div class="col-md-11 float-end text-dark">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item mb-2">
+                                        el tercero
+                                    </li>
+                                    <li class="list-group-item mb-2">
+                                        el tercero
+                                    </li>
+                                    <li class="list-group-item mb-2">
+                                        el tercero
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                           divmd11Edu <div class="col-md-11 bg-primary rounded-start mb-2 mt-5 float-end">
+                               minidiv4Edu <div class="mb-3 mt-2">
+                                    <h4>&nbsp;Empleos</h4>
+                                </div>
+                            </div>
+
+                            divmd11Edus <div class="col-md-11 float-end text-dark">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item mb-2">
+                                        el tercero
+                                    </li>
+                                    <li class="list-group-item mb-2">
+                                        el tercero
+                                    </li>
+                                    <li class="list-group-item mb-2">
+                                        el tercero
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                           divmd11Skill <div class="col-md-11 bg-primary rounded-start mb-2 mt-5 float-end">
+                               minidiv4Skill <div class="mb-3 mt-2">
+                                    <h4>&nbsp;Empleos</h4>
+                                </div>
+                            </div>
+                           divmd11Skills <div class="col-md-11 float-end text-dark">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item mb-2">
+                                        el tercero
+                                    </li>
+                                    <li class="list-group-item mb-2">
+                                        el tercero
+                                    </li>
+                                    <li class="list-group-item mb-2">
+                                        el tercero
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>-->
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/Site/Index/Index.js"></script>
+</body>
+
+</html>
